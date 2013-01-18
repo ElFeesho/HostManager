@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditHostWindow</class>
+ <widget class="QMainWindow" name="EditHostWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>363</width>
+    <height>134</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>363</width>
+    <height>134</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>363</width>
+    <height>134</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Edit Existing Record</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="gfx.qrc">
+    <normaloff>:/icons/res/icon.png</normaloff>:/icons/res/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QDialogButtonBox" name="buttonBox">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>100</y>
+      <width>161</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="standardButtons">
+     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtIP">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>341</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Enter a valid IP address (0.0.0.0 - 255.255.255.255)</string>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>127.0.0.1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtHost">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>341</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Host Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>14</y>
+      <width>341</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter the new host record information and click 'OK' to save.</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="gfx.qrc"/>
+ </resources>
+ <connections/>
+</ui>
